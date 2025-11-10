@@ -33,6 +33,7 @@ Desarrollar una aplicación web en **React + TypeScript** que cumpla con el sigu
 
 ## 🧱 Estructura del proyecto
 
+```bash
 src/
 ├── api/ # Mock API que simula backend
 │ └── mock.ts
@@ -49,7 +50,7 @@ src/
 ├── App.tsx # Estructura principal de la app
 ├── main.tsx # Punto de entrada
 └── styles.css # Estilos
-
+```
 
 ---
 
@@ -106,7 +107,7 @@ Funciona en pantallas móviles y desktop.
 
 ```bash
   npm run test
-  git clone https://github.com/soldiersnake/signaturit-mvp.git
+  git clone https://github.com/soldiersnake/Signaturit-Technical-Test.git
   cd signaturit-mvp
   npm install
   npm run dev # Correr la app en local
@@ -121,7 +122,7 @@ Incluye tests con React Testing Library y Vitest:
 
 ```bash
   npm run test
-  git clone https://github.com/soldiersnake/signaturit-mvp.git
+  git clone https://github.com/soldiersnake/Signaturit-Technical-Test.git
   cd signaturit-mvp
   npm install
   npm run test # Correr los test
