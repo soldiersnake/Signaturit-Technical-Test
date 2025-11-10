@@ -5,6 +5,12 @@ El objetivo es construir una aplicación simple de gestión de documentos que pe
 
 ---
 
+## Proyecto desplegado
+
+### [Signaturit-test](https://signaturit-test.netlify.app/) 
+
+---
+
 ## 🚀 Objetivo del proyecto
 
 Desarrollar una aplicación web en **React + TypeScript** que cumpla con el siguiente flujo:
@@ -28,6 +34,7 @@ Desarrollar una aplicación web en **React + TypeScript** que cumpla con el sigu
 | Formularios | [React Hook Form](https://react-hook-form.com/) |
 | Testing | [Vitest](https://vitest.dev/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) |
 | Estilos | CSS nativo (flex + grid + variables de tema) |
+| Depliegue | [Netlify](https://www.netlify.com/)|
 
 ---
 
@@ -103,7 +110,7 @@ Funciona en pantallas móviles y desktop.
 
 ---
 
-## ⚙️ Correr App en local:
+## ⚙️ Correr App en local
 
 ```bash
   npm run test
