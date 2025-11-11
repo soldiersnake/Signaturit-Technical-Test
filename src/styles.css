@@ -51,7 +51,8 @@ button{
     border:none;
     color:#041023;
     cursor:pointer;
-    font-weight:600
+    font-weight:600;
+    margin: 4px;
 }
 button.secondary{
     background:#ff6b6b;
@@ -101,7 +102,82 @@ button.ghost{
     top:10px;
     transform:translateX(-50%)
 }
-@media (max-width:700px){
-    .row{ flex-direction:column; align-items:stretch }
-    .table td .row{ flex-direction:row }
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group input {
+  margin-bottom: 4px;
+}
+
+.error-msg {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 2px;
+}
+@media (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .table td .row {
+    flex-direction: row;
+  }
+
+  .table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .table thead {
+    display: none; 
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 12px;
+    border: 1px solid #1e2a4f;
+    border-radius: 12px;
+    padding: 8px 10px;
+    background: #101833;
+  }
+
+  .table td {
+    border-bottom: none; 
+    padding: 6px 0;
+  }
+
+  .table td:first-child .title {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .table td:last-child {
+    margin-top: 8px;
+  }
+
+  .table td:last-child .row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .table td:last-child button {
+    flex: 1 1 30%;
+  }
 }

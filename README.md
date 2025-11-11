@@ -5,7 +5,7 @@ El objetivo es construir una aplicación simple de gestión de documentos que pe
 
 ---
 
-## Proyecto desplegado
+## 🛜 Proyecto desplegado
 
 ### [Signaturit-test](https://signaturit-test.netlify.app/) 
 
@@ -54,6 +54,11 @@ src/
 ├── types
 │ └── types.ts # Tipos globales de TypeScript
 ├── test/ # Test/Pruebas
+│ ├── App.test.tsx
+│ ├── NotificationToast.test.tsx
+│ ├── SignatureRequestForm.test.tsx
+│ ├── UploadForm.test.tsx
+│ └── DocumentTable.test.tsx
 ├── App.tsx # Estructura principal de la app
 ├── main.tsx # Punto de entrada
 └── styles.css # Estilos

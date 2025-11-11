@@ -17,7 +17,10 @@ export default function UploadForm() {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="card">
             <h2>Upload Document</h2>
-            <input type="file" accept=".pdf,.doc,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" {...register('file', { required: true })} />
+            <input
+                data-testid="file-input"
+                type="file"
+                accept=".pdf,.doc,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" {...register('file', { required: true })} />
             <button type="submit">Upload</button>
         </form>
     );
