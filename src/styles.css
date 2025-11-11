@@ -63,6 +63,11 @@ button.ghost{
     border:1px solid #2a3a66;
     color: var(--text)
 }
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(60%);
+}
 .table{
     width:100%;
     border-collapse:collapse
