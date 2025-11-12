@@ -112,22 +112,49 @@ button:disabled {
   flex-direction: column;
   gap: 6px;
 }
-
 .input-group {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
 .input-group input {
   margin-bottom: 4px;
 }
-
 .error-msg {
   color: #ff6b6b;
   font-size: 0.8rem;
   font-weight: 500;
   margin-left: 2px;
+}
+.upload-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.file-input {
+  flex: 1 1 auto;
+  max-width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #2a3a66;
+  background: #0e1835;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-input::file-selector-button {
+  background: var(--accent);
+  border: none;
+  color: #041023;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.upload-btn {
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 @media (max-width: 760px) {
   .row {
@@ -137,16 +164,13 @@ button:disabled {
   .table td .row {
     flex-direction: row;
   }
-
   .table {
     border-collapse: separate;
     border-spacing: 0;
   }
-
   .table thead {
     display: none; 
   }
-
   .table,
   .table tbody,
   .table tr,
@@ -154,7 +178,6 @@ button:disabled {
     display: block;
     width: 100%;
   }
-
   .table tr {
     margin-bottom: 12px;
     border: 1px solid #1e2a4f;
@@ -162,27 +185,30 @@ button:disabled {
     padding: 8px 10px;
     background: #101833;
   }
-
   .table td {
     border-bottom: none; 
     padding: 6px 0;
   }
-
   .table td:first-child .title {
     font-weight: 600;
     margin-bottom: 2px;
   }
-
   .table td:last-child {
     margin-top: 8px;
   }
-
   .table td:last-child .row {
     flex-wrap: wrap;
     gap: 6px;
   }
-
   .table td:last-child button {
     flex: 1 1 30%;
+  }
+  .upload-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .upload-btn,
+  .file-input {
+    width: 100%;
   }
 }
